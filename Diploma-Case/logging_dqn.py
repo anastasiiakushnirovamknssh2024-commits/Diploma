@@ -56,7 +56,5 @@ if len(y) > 0:
     plt.title("DQN Smoothed")
     plt.savefig(os.path.join(log_dir, "convergence_plot_dqn.png"))
     plt.close()
-
-# optional: postprocess video/data
-
+    
 env.post_processing(os.path.join(log_dir, "dqn.mp4"), SAVE_DATA=True)
