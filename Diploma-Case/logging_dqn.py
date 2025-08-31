@@ -1,7 +1,3 @@
-__doc__ = """This script is to train a DQN policy for the arm reaching a target in between unstructured obstacles.
-Case 4 style logging and plotting (monitor.csv, convergence plot).
-"""
-
 import os
 import numpy as np
 import torch
@@ -62,4 +58,5 @@ if len(y) > 0:
     plt.close()
 
 # optional: postprocess video/data
+
 env.post_processing(os.path.join(log_dir, "dqn.mp4"), SAVE_DATA=True)
